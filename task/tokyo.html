@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <title>City Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            border: 2px solid #ccc;
+        }
+        .header {
+            background-color: rgb(255, 182, 193);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        .content {
+            width: 80%;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start; /* Agar gambar dan teks sejajar di atas */
+        }
+        .text {
+            width: 60%;
+            padding-right: 20px; /* Jarak antara teks dan gambar */
+        }
+        .image {
+            width: 40%;
+        }
+        .image img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+        .footer {
+            background-color:rgb(255, 182, 193);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">City Gallery</div>
+
+    <div class="container">
+        <div class="sidebar">
+            <a href="london.html">London</a>
+            <a href="paris.html">Paris</a>
+            <a href="tokyo.html">Tokyo</a>
+        </div>
+        <div class="content">
+            <div class="text">
+                <h2>Tokyo</h2>
+                <p>Tokyo is the capital of Japan and the most populous city in the world, with a metropolitan area of over 37 million people. Located on Honshu Island, Tokyo was originally known as Edo before becoming the center of government in 1868. The city is a hub of economy, culture, and technology, blending tradition with modernity.</p>
+                <p>Tokyo is famous for its landmarks such as Tokyo Tower, Shibuya Crossing, and the Imperial Palace, as well as being a global center for innovation and trends.</p>
+            </div>
+            <div class="image">
+                <img src="tokyo.jpg" alt="Gambar Tokyo">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Copyright Kevin Duta</div>
+
+</body>
+</html>

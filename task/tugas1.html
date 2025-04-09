@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Faktorial</title>
+    <script>
+        function hitungFaktorial() {
+            let angka = document.getElementById("inputAngka").value;
+            let hasil = 1;
+            if (angka >= 0) {
+                for (let i = 1; i <= angka; i++) {
+                    hasil *= i;
+                }
+                document.getElementById("hasilFaktorial").innerHTML = 
+                    `Angka faktorial dari ${angka} adalah: ${hasil}`;
+            } else {
+                document.getElementById("hasilFaktorial").innerHTML = 
+                    "Masukkan angka positif!";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Hitung faktorial dari input</h2>
+    <p>Masukkan sembarang angka</p>
+    <input type="number" id="inputAngka" min="0">
+    <button onclick="hitungFaktorial()">Click</button>
+    <p id="hasilFaktorial"></p>
+</body>
+</html>
